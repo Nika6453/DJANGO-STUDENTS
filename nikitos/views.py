@@ -5,12 +5,6 @@ from django.contrib.auth.decorators import login_required
 from .models import Student, Group, Club
 from .forms import RegisterForm
 
-
-# Приветственная страница
-def hello(request):
-    return HttpResponse("Добро пожаловать на сайт колледжа!")
-
-
 # Регистрация
 def register(request):
     if request.method == "POST":
